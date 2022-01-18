@@ -30,7 +30,7 @@ def init_model(config, checkpoint=None, device='cuda:0'):
     config.test_cfg.metrics = None
     model = build_model(config.model, test_cfg=config.test_cfg)
     if checkpoint is not None:
-        checkpoint = load_checkpoint(model, checkpoint, map_location=device))
+        checkpoint = load_checkpoint(model, checkpoint, map_location=device)
 
     model.cfg = config  # save the config in the model for convenience
     model.to(device)
