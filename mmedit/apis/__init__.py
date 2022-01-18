@@ -2,7 +2,8 @@
 from .generation_inference import generation_inference
 from .inpainting_inference import inpainting_inference
 from .inpainting_inference2 import inpainting_inference2
-from .matting_inference import init_model, matting_inference
+# from .matting_inference import init_model, matting_inference
+from .matting_inference2 import init_model, matting_inference
 from .restoration_face_inference import restoration_face_inference
 from .restoration_inference import restoration_inference
 from .restoration_video_inference import restoration_video_inference
