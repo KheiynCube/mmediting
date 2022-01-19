@@ -92,8 +92,8 @@ def inpainting_inference2(model, masked_img, mask):
         # scatter to specified GPU
         device = next(model.parameters()).device  # model device
         data = scatter(data, [device])[0]
-    else:
-        data = scatter(data, [-1])[0]
+    # else:
+    #     data = scatter(data, [-1])[0]
 
     # forward the model
     with torch.no_grad():
